@@ -1,0 +1,51 @@
+{
+    "env": {
+        "simulink": "C:\\Program Files\\MATLAB\\R2026a\\simulink",
+        "matlab": "C:\\Program Files\\MATLAB\\R2026a",
+        "unity": "${workspaceFolder}\\unity.framework"
+    },
+    "configurations": [
+        {
+            "name": "Simulink",
+            "compilerPath": "C:\\msys64\\ucrt64\\bin\\gcc",
+            "intelliSenseMode": "windows-gcc-x86",
+            "includePath": [
+                "${simulink}\\include",
+                "${matlab}\\extern\\include",
+                "${matlab}\\rtw\\c\\src",
+                "${matlab}\\toolbox\\rtw\\accel\\accelTemplateFolder",
+                "${workspaceFolder}\\include\\**"
+            ],
+            "defines": [],
+            "cStandard": "c11",
+            "browse": {
+                "path": [
+                    "${simulink}",
+                    "${matlab}",
+                    "${workspaceFolder}\\src",
+                    "${workspaceFolder}\\mex"
+                ]
+            }
+        },
+        {
+            "name": "MSYS2 UCRT64",
+            "compilerPath": "C:\\msys64\\ucrt64\\bin\\gcc",
+            "intelliSenseMode": "windows-gcc-x86",
+            "includePath": [
+                "${workspaceFolder}\\include\\**",
+                "${workspaceFolder}\\mocks\\**",
+                "${workspaceFolder}\\tests\\testVectors",
+                "${unity}"
+            ],
+            "defines": ["UNITY_INCLUDE_CONFIG_H"],
+            "cStandard": "c11",
+            "browse": {
+                "path": [
+                    "${unity}"
+                ]
+            }
+        }
+    ],
+    "version": 4,
+    "enableConfigurationSquiggles": true
+}

@@ -1,0 +1,13 @@
+#ifndef D_CONTROLSYSTEMSPY_H
+#define D_CONTROLSYSTEMSPY_H
+
+#include "ControlSystem.h"
+
+typedef enum FAKECONTROL_STATUS {
+    FAKECONTROL_UNKNOWN = -1,
+    FAKECONTROL_SET,
+} FAKECONTROL_STATUS;
+
+FAKECONTROL_STATUS ControlSystemSpy_GetCmd(CMD_2D *a);
+
+#endif /* D_FAKECONTROLSYSTEM_H */
